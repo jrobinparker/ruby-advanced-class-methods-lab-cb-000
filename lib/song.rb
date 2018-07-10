@@ -4,11 +4,6 @@ class Song
   
   @@all = []
 
-  def new_by_name(name)
-    self.
-    return self.name
-  end
-
   def self.all
     @@all
   end
@@ -16,5 +11,8 @@ class Song
   def save
     self.class.all << self
   end
+  
+  def create
+    self.new
 
 end
